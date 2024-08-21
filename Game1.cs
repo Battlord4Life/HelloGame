@@ -28,7 +28,7 @@ namespace HelloGame
             _ballVel = new((float)rand.NextDouble(), (float)rand.NextDouble());
             _ballVel.Normalize();
             _ballVel *= 250;
-
+            Window.AllowUserResizing = true;
             base.Initialize();
         }
 
